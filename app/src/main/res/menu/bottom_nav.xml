@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:backgroundTint="#ccff00"
+        android:iconTint="#ccff00"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Home" />
+
+    <item android:title="Message"
+        android:id="@+id/message"
+        android:backgroundTint="#ccff00"
+        android:iconTint="#ccff00"
+        android:icon="@drawable/ic_baseline_message_24"/>
+    <item android:title="Create"
+        android:id="@+id/create"
+        android:backgroundTint="#ccff00"
+        android:iconTint="#ccff00"
+        android:icon="@drawable/ic_baseline_add_circle_24"/>
+    <item android:title="Upcoming"
+        android:id="@+id/upcoming"
+        android:backgroundTint="#ccff00"
+        android:iconTint="#ccff00"
+        android:icon="@drawable/ic_baseline_upcoming_24"/>
+    <item android:title="Acc"
+        android:id="@+id/acc"
+        android:iconTint="#ccff00"
+        android:backgroundTint="#ccff00"
+        android:icon="@drawable/ic_baseline_manage_accounts_24"/>
+</menu>

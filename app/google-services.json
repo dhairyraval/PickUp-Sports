@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1047797754263",
+    "project_id": "pickupsports-52636",
+    "storage_bucket": "pickupsports-52636.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1047797754263:android:f564b6b4cce4b55c557cd2",
+        "android_client_info": {
+          "package_name": "com.example.pickupsports"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1047797754263-2sm6osq36p3rqlgjittra763ivd60og3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.pickupsports",
+            "certificate_hash": "610d65144be375b1843226d56b4c2cf1805a5165"
+          }
+        },
+        {
+          "client_id": "1047797754263-g5rarohg61qblptqef8i6sc6m639d3jd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCuKpVwWPKx1A_Fp0-LwmMiQ3U-4MiCiGI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1047797754263-g5rarohg61qblptqef8i6sc6m639d3jd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

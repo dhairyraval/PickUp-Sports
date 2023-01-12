@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".CreateEvent">
+
+    <Button
+        android:id="@+id/create_cancel_btn"
+        android:layout_width="161dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="#ccff00"
+        android:text="Cancel"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
+
+    <TextView
+        android:id="@+id/create_title_notice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/create_title_Notice"
+        android:textColor="#656464"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/create_frame_input2" />
+
+    <TextView
+        android:id="@+id/create_title_level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="268dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/create_title_level"
+        android:textColor="#656464"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/create_input_sport_name" />
+
+    <ImageView
+        android:id="@+id/create_minus_btn2"
+        android:layout_width="28dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/btn_minus"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/create_title_total_number" />
+
+    <TextView
+        android:id="@+id/create_title_total_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/create_title_total_number"
+        android:textColor="#656464"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/create_frame_input" />
+
+    <ImageView
+        android:id="@+id/create_add_btn2"
+        android:layout_width="28dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/btn_add"
+        app:layout_constraintStart_toEndOf="@+id/create_frame_input2"
+        app:layout_constraintTop_toBottomOf="@+id/create_title_total_number" />
+
+    <EditText
+        android:id="@+id/create_frame_input2"
+        android:layout_width="39dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/frame_with_gray_edge_white"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="10dp"
+        android:text="1"
+        android:textColor="#000"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/create_minus_btn2"
+        app:layout_constraintTop_toBottomOf="@+id/create_title_total_number" />
+
+    <TextView
+        android:id="@+id/create_title_vacancy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="17dp"
+        android:text="@string/create_title_vacancy"
+        android:textColor="#656464"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/create_input_sport_name" />
+
+    <TextView
+        android:id="@+id/create_title_sport_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="17dp"
+        android:text="@string/create_title_sport_name"
+        android:textColor="#656464"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/create_input_location" />
+
+    <EditText
+        android:id="@+id/create_input_sport_name"
+        android:layout_width="334dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="36dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/create_title_sport_name" />
+
+    <EditText
+        android:id="@+id/create_input_location"
+        android:layout_width="332dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginEnd="36dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/create_title_location" />
+
+    <TextView
+        android:id="@+id/create_title_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="156dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/create_title_time"
+        android:textColor="#656464"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/create_title_date"
+        app:layout_constraintTop_toBottomOf="@+id/create_devider" />
+
+    <TextView
+        android:id="@+id/create_title_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="17dp"
+        android:text="@string/create_title_location"
+        android:textColor="#656464"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/create_input_date" />
+
+    <TextView
+        android:id="@+id/create_time_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:layout_marginStart="156dp"
+        android:text="@string/create_time_hint"
+        android:textAlignment="center"
+        android:textColor="#9A9494"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/create_date_hint"
+        app:layout_constraintTop_toBottomOf="@+id/create_title_time" />
+
+    <TextView
+        android:id="@+id/create_title_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/create_title_date"
+        android:textColor="#656464"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/create_devider" />
+
+    <TextView
+        android:id="@+id/create_date_hint"
+        android:layout_width="35dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="36dp"
+        android:text="@string/create_date_hint"
+        android:textAlignment="center"
+        android:textColor="#9A9494"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/create_title_date" />
+
+    <Button
+        android:id="@+id/create_save_btn"
+        android:layout_width="172dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#ccff00"
+        android:text="SAVE"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/create_cancel_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
+
+    <TextView
+        android:id="@+id/create_title"
+        android:layout_width="209dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/create_title"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/create_devider"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <View
+        android:id="@+id/create_devider"
+        android:layout_width="369dp"
+        android:layout_height="2dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/create_title" />
+
+    <EditText
+        android:id="@+id/create_input_date"
+        android:layout_width="152dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="36dp"
+        android:ems="10"
+        android:inputType="date"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/create_date_hint" />
+
+    <EditText
+        android:id="@+id/create_input_time"
+        android:layout_width="151dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="36dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/create_input_date"
+        app:layout_constraintTop_toBottomOf="@+id/create_time_hint" />
+
+    <ImageView
+        android:id="@+id/create_add_btn"
+        android:layout_width="28dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/btn_add"
+        app:layout_constraintStart_toEndOf="@+id/create_frame_input"
+        app:layout_constraintTop_toBottomOf="@+id/create_title_vacancy" />
+
+    <EditText
+        android:id="@+id/create_frame_input"
+        android:layout_width="39dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="3dp"
+        android:background="@drawable/frame_with_gray_edge_white"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="10dp"
+        android:text="1"
+        android:textColor="#000"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/create_minus_btn"
+        app:layout_constraintTop_toBottomOf="@+id/create_title_vacancy" />
+
+    <ImageView
+        android:id="@+id/create_minus_btn"
+        android:layout_width="28dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/btn_minus"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/create_title_vacancy" />
+
+    <Spinner
+        android:id="@+id/create_level_play"
+        android:layout_width="152dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/create_title_level" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="340dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/create_title_notice">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/create_input_notice"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:hint="@string/create_notice_hint"
+            android:textAlignment="viewStart" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

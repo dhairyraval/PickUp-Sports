@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <!--Home view event list-->
+    <fragment
+        android:id="@+id/HomeFragment"
+        android:name="com.example.pickupsports.HomeFragment"
+        android:label="@string/home_fragment_label"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_HomeFragment_to_SummaryFragment"
+            app:destination="@id/SummaryFragment" />
+        <action
+            android:id="@+id/action_HomeFragment_to_CreateEvent"
+            app:destination="@id/CreateEvent" />
+        <action
+            android:id="@+id/action_HomeFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_HomeFragment_to_message2"
+            app:destination="@id/MessageFragment" />
+        <action
+            android:id="@+id/action_HomeFragment_to_upcomingFragment2"
+            app:destination="@id/UpcomingFragment" />
+
+    </fragment>
+
+    <!--    create event-->
+    <fragment
+        android:id="@+id/CreateEvent"
+        android:name="com.example.pickupsports.CreateEvent"
+        android:label="@string/create_event_fragment_label"
+        tools:layout="@layout/fragment_create_event">
+        <action
+            android:id="@+id/action_CreateEvent_to_summaryFragment"
+            app:destination="@id/SummaryFragment" />
+        <action
+            android:id="@+id/action_Cancel_Create_to_HomeFragment"
+            app:destination="@id/HomeFragment" />
+        <argument
+            android:name="mode"
+            android:defaultValue="create"
+            app:argType="string"/>
+        <argument
+            android:name="eventID"
+            android:defaultValue=""
+            app:argType="string"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.example.pickupsports.ui.loginAndRegister.RegisterFragment"
+        android:label="fragment_register"
+        tools:layout="@layout/fragment_register">
+        <action
+            android:id="@+id/action_registerFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.pickupsports.ui.loginAndRegister.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_HomeFragment"
+            app:destination="@id/HomeFragment"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/SummaryFragment"
+        android:name="com.example.pickupsports.SummaryFragment"
+        android:label="fragment_summary"
+        tools:layout="@layout/fragment_summary" >
+        <argument
+            android:name="referer"
+            android:defaultValue="create"
+            app:argType="string"
+            />
+        <action
+            android:id="@+id/action_ModifyEvent_SummaryFragment_to_CreateEvent"
+            app:destination="@id/CreateEvent" />
+        <action
+            android:id="@+id/action_QuitEvent_or_BackToHome_SummaryFragment_to_HomeFragment"
+            app:destination="@id/HomeFragment" />
+        <argument
+            android:name="eventId"
+            android:defaultValue=""
+            app:argType="string" />
+        <argument
+            android:name="ownerId"
+            android:defaultValue=""
+            app:argType="string"/>
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.example.pickupsports.ProfileFragment"
+        android:label="ProfileFragment" >
+        <action
+            android:id="@+id/action_profileFragment_to_editProfileFragment"
+            app:destination="@id/editProfileFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/profileFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="com.example.pickupsports.EditProfileFragment"
+        android:label="EditProfileFragment" >
+        <action
+            android:id="@+id/action_editProfileFragment_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/MessageFragment"
+        android:name="com.example.pickupsports.Message"
+        android:label="fragment_message"
+        tools:layout="@layout/fragment_message" />
+
+    <fragment
+        android:id="@+id/UpcomingFragment"
+        android:name="com.example.pickupsports.UpcomingFragment"
+        android:label="fragment_upcoming"
+        tools:layout="@layout/fragment_upcoming" >
+        <action
+            android:id="@+id/action_UpcomingFragment_to_chatActivity"
+            app:destination="@id/chatActivity" />
+    </fragment>
+    <activity
+        android:id="@+id/chatActivity"
+        android:name="com.example.pickupsports.ChatActivity"
+        android:label="activity_chat"
+        tools:layout="@layout/activity_chat" />
+</navigation>
